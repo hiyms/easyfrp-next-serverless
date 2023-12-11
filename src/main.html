@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="card bg-base-200 w-2/5 h-auto justify-center flex">
+        <div class="card-body">
+            <label class="form-control w-full max-w-xs">
+                <div class="label">
+                  <span class="label-text">本地端口</span>
+                </div>
+                <input type="text" placeholder="1~25565" class="input input-bordered w-full max-w-xs" />
+              </label>
+              <label class="form-control w-full max-w-xs">
+                <div class="label">
+                  <span class="label-text">远程端口</span>
+                </div>
+                <input type="text" placeholder="1~25565" class="input input-bordered w-full max-w-xs" />
+              </label>
+          <label class="label cursor-pointer">
+            隧道类型
+            <select class="select select-bordered w-30 max-w-xs">
+                <option selected>TCP</option>
+                <option>UDP</option>
+              </select>
+          </label>
+          <textarea class="textarea textarea-bordered" placeholder="输出" readonly></textarea>
+            <button class="btn btn-success">
+                <span class="loading loading-spinner"></span>
+                运行
+            </button>
+        </div>
+      </div>
+</body>
+</html>
